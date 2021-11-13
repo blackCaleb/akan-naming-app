@@ -11,8 +11,31 @@
 <body>
     <h2 class="heading">Akan Naming App</h2>
 
-    
+    <label for="year of birth">Year Of Birth</label>
+    <select name="year" id="year">
+        <option value="none" selected>year</option>
+        
 
+    </select>
+
+    <label for="month of birth">Month Of Birth</label>
+    <select name="month">
+        <option value="none" selected>Month</option>
+        <option value="male" id="mganuary">January</option>
+        <option value="female" id="mfebruary">February</option>
+        <option value="other" id="mmarch">March</option>
+    </select>
+
+    <label for="day of birth">Day Of Birth</label>
+    <input type="number" id="day" min="1" max="31">
+
+    <label for="gender"> Select you gender</label>
+    <select name="gender">
+        <option value="none" selected>Gender</option>
+        <option value="male" id="gmale">Male</option>
+        <option value="female" id="gfemale">Female</option>
+        <option value="other" id="gother">Other</option>
+    </select>
 
     <script src="main.js"></script>    
 </body>
