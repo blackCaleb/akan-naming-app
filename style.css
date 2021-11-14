@@ -17,6 +17,12 @@ body{
     font-weight: 600;
 }
 
+.txt{
+    text-align: center;
+    color: antiquewhite;
+    font-weight: 500;
+}
+
 .container{
     display: flex;
     flex-direction: column;

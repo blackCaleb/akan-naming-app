@@ -28,3 +28,14 @@ window.onload = function () {
         yearb.appendChild(option);
     }
 };
+
+if (Object.prototype.toString.call(dob) === "[object Date]") {
+    // it is a date
+    if (isNaN(dob.getTime())) {  // d.valueOf() could also work
+    //   date is not valid
+    } else {
+    //   date is valid
+    }
+  } else {
+    // not a date
+  }
