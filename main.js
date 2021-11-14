@@ -1,4 +1,16 @@
+var curday = function(sp){
+    today = new Date ();
+    var dob = today.getDate();
+    var mm = today.getMonth()+1; //this is because january is 0.
+    var yyyy = today.getFullYear();
 
+    if(dob<10) dob='0'+dd;
+    if(month<10) month='0'+mm;
+    return (month+sp+dob+sp+yearb)
+};
+
+console.log(curday('/'));
+console.log(curday('-'));
 
 
 window.onload = function () {
