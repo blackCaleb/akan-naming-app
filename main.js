@@ -39,3 +39,10 @@ if (Object.prototype.toString.call(dob) === "[object Date]") {
   } else {
     // not a date
   }
+
+  function generatename() {
+      var yearbirth = document.getElementById("yearb");
+      var monthbirth = document.getElementById("month");
+      var daybirth = document.getElementById("dob");
+      var gender = document.getElementById("gender");
+  }
