@@ -45,4 +45,11 @@ if (Object.prototype.toString.call(dob) === "[object Date]") {
       var monthbirth = document.getElementById("month");
       var daybirth = document.getElementById("dob");
       var gender = document.getElementById("gender");
+    //   var akan name
+    var week = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    var day = week[new Date(year.val()+'/'+month.val()+'/'+date.val()).getDay()];
+    var name;
+
+
+    
   }
