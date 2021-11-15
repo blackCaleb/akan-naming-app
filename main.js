@@ -12,8 +12,8 @@ var curday = function(sp){
 console.log(curday('/'));
 console.log(curday('-'));
 
-
-window.onload = function () {
+  // for year
+  window.onload = function () {
     //Reference the DropDownList.
     var year = document.getElementById("year");
 
@@ -27,9 +27,7 @@ window.onload = function () {
         option.value = i;
         year.appendChild(option);
     }
-};
-
-
+  };
 
   function generatename() {
       var yearbirth = document.getElementById("year");
@@ -100,3 +98,4 @@ window.onload = function () {
       }
     }
   }
+
