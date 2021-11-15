@@ -11,75 +11,81 @@
 <body>
     <h2 class="heading">Akan Naming System</h2>
 
-    <p class="txt">Akan names are names given in ghana depending on what day you were born and on weather you are male or female.
+    <p class="txt" id="response">Akan names are names given in ghana depending on what day you were born and on weather you are male or female.
     Try yours by filling the data below.</p>
 
     <div class="container">
-        <label for="year of birth">Year Of Birth</label>
-        <span id="year-err"></span>
-        <select id="year"></select>
+        <div class="year">
+            <label for="year of birth">Year Of Birth</label>            
+            <select id="year"></select>
+            <span id="year-err"></span>
+        </div>
+        <div class="month">
+            <label for="month of birth">Month Of Birth</label>            
+            <select name="month" id="month">
+                <option value="none" selected>Month</option>
+                <option value="0" >1</option>
+                <option value="1" >2</option>
+                <option value="2" >3</option>
+                <option value="3" >4</option>
+                <option value="4" >5</option>
+                <option value="5" >6</option>
+                <option value="6" >7</option>
+                <option value="7" >8</option>
+                <option value="8" >9</option>
+                <option value="9" >10</option>
+                <option value="10" >11</option>
+                <option value="11" >12</option>
+            </select>
+            <span id="month-err"></span>
+        </div>
 
-        <label for="month of birth">Month Of Birth</label>
-        <span id="month-err"></span>
-        <select name="month" id="month">
-            <option value="none" selected>Month</option>
-            <option value="0" >January</option>
-            <option value="1" >  February</option>
-            <option value="2" >  March</option>
-            <option value="3" >  April</option>
-            <option value="4" >  May</option>
-            <option value="5" >  June</option>
-            <option value="6" >  July</option>
-            <option value="7" >  August</option>
-            <option value="8" >  September</option>
-            <option value="9" >  October</option>
-            <option value="10" >  November</option>
-            <option value="11" >  December</option>
-        </select>
-
-        <label for="day of birth">Date Of Birth</label>
-        <span id="dob-err"></span>
-        <select name="daybirth" id="dob">
-            <option value="none" selected>Day</option>
-            <option value="00">1</option>
-            <option value="01" >2</option>
-            <option value="02" >3</option>
-            <option value="03" >4</option>
-            <option value="04" >5</option>
-            <option value="05" >6</option>
-            <option value="06" >7</option>
-            <option value="07" >8</option>
-            <option value="08" >9</option>
-            <option value="09" >10</option>
-            <option value="10" >11</option>
-            <option value="11" >12</option>
-            <option value="12" >13</option>
-            <option value="13">14</option>
-            <option value="14">15</option>
-            <option value="15">16</option>
-            <option value="16">17</option>
-            <option value="17">18</option>
-            <option value="18">19</option>
-            <option value="19">20</option>
-            <option value="20">21</option>
-            <option value="21">21</option>
-            <option value="22">23</option>
-            <option value="23">24</option>
-            <option value="24">25</option>
-            <option value="25">26</option>
-            <option value="26">27</option>
-            <option value="27">28</option>
-            <option value="28">29</option>
-            <option value="29">30</option>
-            <option value="30">31</option>
-        </select>
-
-        <label for="gender"> Select you gender</label>
-        <select name="gender" id="gender">
-            <option value="none" selected>Gender</option>
-            <option value="Male">Male</option>
-            <option value="Female">Female</option>
-        </select>
+        <div class="day">
+            <label for="day of birth">Date Of Birth</label>
+            <span id="dob-err"></span>
+            <select name="daybirth" id="dob">
+                <option value="none" selected>Day</option>
+                <option value="00">1</option>
+                <option value="01" >2</option>
+                <option value="02" >3</option>
+                <option value="03" >4</option>
+                <option value="04" >5</option>
+                <option value="05" >6</option>
+                <option value="06" >7</option>
+                <option value="07" >8</option>
+                <option value="08" >9</option>
+                <option value="09" >10</option>
+                <option value="10" >11</option>
+                <option value="11" >12</option>
+                <option value="12" >13</option>
+                <option value="13">14</option>
+                <option value="14">15</option>
+                <option value="15">16</option>
+                <option value="16">17</option>
+                <option value="17">18</option>
+                <option value="18">19</option>
+                <option value="19">20</option>
+                <option value="20">21</option>
+                <option value="21">21</option>
+                <option value="22">23</option>
+                <option value="23">24</option>
+                <option value="24">25</option>
+                <option value="25">26</option>
+                <option value="26">27</option>
+                <option value="27">28</option>
+                <option value="28">29</option>
+                <option value="29">30</option>
+                <option value="30">31</option>
+            </select>
+        </div>
+        <div class="gender">
+            <label for="gender"> Select you gender</label>
+            <select name="gender" id="gender">
+                <option value="none" selected>Gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select>
+        </div>
 
         <button onclick="generatename" id="but">Generate name</button>
     </div>

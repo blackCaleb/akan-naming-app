@@ -108,5 +108,8 @@ console.log(curday('-'));
     else if (day.val() === ''){
       $('#dob-err').html("Please select your day of birth");
     }
+
+    // end of condition
+    
   }
 
