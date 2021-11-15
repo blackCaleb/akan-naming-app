@@ -97,5 +97,16 @@ console.log(curday('-'));
         name = "Kwame"
       }
     }
+
+    // validating data
+    if(year.val() === ''){
+      $('#year-err').html("Please select your year of birth");
+    }
+    else if (month.val() === ''){
+      $('#month-err').html("Please select your month of birth");
+    }
+    else if (day.val() === ''){
+      $('#dob-err').html("Please select your day of birth");
+    }
   }
 
