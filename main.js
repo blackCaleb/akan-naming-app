@@ -2,11 +2,11 @@ var curday = function(sp){
     today = new Date ();
     var dob = today.getDate();
     var mm = today.getMonth()+1; //this is because january is 0.
-    var yyyy = today.getFullYear();
+    var year = today.getFullYear();
 
     if(dob<10) dob='0'+dd;
     if(month<10) month='0'+mm;
-    return (month+sp+dob+sp+yearb)
+    return (month+sp+dob+sp+year)
 };
 
 console.log(curday('/'));
@@ -15,7 +15,7 @@ console.log(curday('-'));
 
 window.onload = function () {
     //Reference the DropDownList.
-    var yearb = document.getElementById("yearb");
+    var year = document.getElementById("year");
 
     //Determine the Current Year.
     var currentYear = (new Date()).getFullYear();
@@ -25,31 +25,39 @@ window.onload = function () {
         var option = document.createElement("OPTION");
         option.innerHTML = i;
         option.value = i;
-        yearb.appendChild(option);
+        year.appendChild(option);
     }
 };
 
-if (Object.prototype.toString.call(dob) === "[object Date]") {
-    // it is a date
-    if (isNaN(dob.getTime())) {  // d.valueOf() could also work
-    //   date is not valid
-    } else {
-    //   date is valid
-    }
-  } else {
-    // not a date
-  }
+
 
   function generatename() {
-      var yearbirth = document.getElementById("yearb");
+      var yearbirth = document.getElementById("year");
       var monthbirth = document.getElementById("month");
       var daybirth = document.getElementById("dob");
       var gender = document.getElementById("gender");
-    //   var akan name
+
+
+    //   adding to DOM property
+    document.getElementById("but").onclick = generatename;
+
+    // attaching a function to the event listener
     var week = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-    var day = week[new Date(year.val()+'/'+month.val()+'/'+date.val()).getDay()];
+    var day = week[new Date(year.val()+'/'+month.val()+'/'+dob.val()).getDay()];
     var name;
 
+    // the condition statements
 
-    
+    // for Male gender
+    if (gender.val() === "Male"){
+
+      day === "Sunday" ? (name = "Kwasi")
+      : day === "Monday" ? (name = "Kwadwo")
+      : day === "Tuesday" ? (name = "Kwabena")
+      : day === "Wednesday" ? (name = "Kwaku")
+      : day === "Thursday" ? (name = "Yaw")
+      : day === "Friday" ? (name = "Kofi")
+      : day === "Saturday" ? (name = "Kwame");
+
+    }
   }
