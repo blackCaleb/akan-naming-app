@@ -48,16 +48,55 @@ window.onload = function () {
 
     // the condition statements
 
-    // for Male gender
+    // for Female gender
+    if (gender.val() === "Female"){
+
+      if(day === "Sunday"){
+        name = "Akosua"
+      }
+      else if(day === "Monday"){
+        name = "Adwoa"
+      }
+      else if(day === "Tuesday"){
+        name = "Abenaa"
+      }
+      else if(day === "Wednesday"){
+        name = "Akuna"
+      }
+      else if(day === "Thursday"){
+        name = "Yaa"
+      }
+      else if(day === "Friday"){
+        name = "Afua"
+      }
+      else if(day === "Saturday"){
+        name = "Ama"
+      }
+    }
+
+    //for Male gender
     if (gender.val() === "Male"){
 
-      day === "Sunday" ? (name = "Kwasi")
-      : day === "Monday" ? (name = "Kwadwo")
-      : day === "Tuesday" ? (name = "Kwabena")
-      : day === "Wednesday" ? (name = "Kwaku")
-      : day === "Thursday" ? (name = "Yaw")
-      : day === "Friday" ? (name = "Kofi")
-      : day === "Saturday" ? (name = "Kwame");
-
+      if(day === "Sunday"){
+        name = "Kwasi"
+      }
+      else if(day === "Monday"){
+        name = "Kwadwo"
+      }
+      else if(day === "Tuesday"){
+        name = "Kwabena"
+      }
+      else if(day === "Wednesday"){
+        name = "Kwaku"
+      }
+      else if(day === "Thursday"){
+        name = "Yaw"
+      }
+      else if(day === "Friday"){
+        name = "Kofi"
+      }
+      else if(day === "Saturday"){
+        name = "Kwame"
+      }
     }
   }
