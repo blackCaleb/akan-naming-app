@@ -28,16 +28,20 @@ console.log(curday('-'));
         year.appendChild(option);
     }
   };
-
-  function generatename() {
-      var yearbirth = document.getElementById("year");
-      var monthbirth = document.getElementById("month");
-      var daybirth = document.getElementById("dob");
-      var gender = document.getElementById("gender");
+  
+  $(document).ready(function(){
+    var year = $('#year');
+    var month = $('#month');
+    var date = $('#date');
+    var gender = $('#gender');
+      // var yearbirth = document.getElementById("year");
+      // var monthbirth = document.getElementById("month");
+      // var daybirth = document.getElementById("dob");
+      // var gender = document.getElementById("gender");
 
 
     //   adding to DOM property
-    document.getElementById("but").onclick = generatename;
+    document.getElementById("but").onclick = function(){
 
     // attaching a function to the event listener
     var week = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
@@ -110,6 +114,10 @@ console.log(curday('-'));
     }
 
     // end of condition
-    
-  }
 
+    else{
+      return('#response').html('you were born on' + day + 'and your akan name is' + name);
+    }
+    }
+  }
+}
