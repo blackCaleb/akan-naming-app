@@ -29,15 +29,15 @@ console.log(curday('-'));
     }
   };
   
-  $(document).ready(function(){
-    var year = $('#year');
-    var month = $('#month');
-    var date = $('#date');
-    var gender = $('#gender');
-      // var yearbirth = document.getElementById("year");
-      // var monthbirth = document.getElementById("month");
-      // var daybirth = document.getElementById("dob");
-      // var gender = document.getElementById("gender");
+  // $(document).ready(function(){
+  //   var year = $('#year');
+  //   var month = $('#month');
+  //   var date = $('#date');
+  //   var gender = $('#gender');
+      var yearbirth = document.getElementById("year");
+      var monthbirth = document.getElementById("month");
+      var daybirth = document.getElementById("dob");
+      var gender = document.getElementById("gender");
 
 
     //   adding to DOM property
@@ -100,7 +100,7 @@ console.log(curday('-'));
       else if(day === "Saturday"){
         name = "Kwame"
       }
-    }
+    };
 
     // validating data
     if(year.val() === ''){
@@ -119,5 +119,3 @@ console.log(curday('-'));
       return('#response').html('you were born on' + day + 'and your akan name is' + name);
     }
     }
-  }
-}
