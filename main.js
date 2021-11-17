@@ -29,6 +29,8 @@ console.log(curday('-'));
     }
   };
 
+  var akanName = function(){
+
     // variables
       var year = document.getElementById("year");
       var month = document.getElementById("month");
@@ -40,60 +42,59 @@ console.log(curday('-'));
     var week = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
     var day = new Date(year + "/" + month + "/" + day);
     var find = day.getDay();
-    var response = document.getElementById("response")
-    var name;
-
-    // the condition statements
+    var Display = document.getElementById("Display");
+    var name = "akan";
+     // the condition statements
 
     // for Female gender
-    if (gender === "Female"){
+    if (female == true){
 
       if(day === "Sunday"){
-        name = "Akosua"
+        akan = "Akosua"
       }
       else if(day === "Monday"){
-        name = "Adwoa"
+        akan = "Adwoa"
       }
       else if(day === "Tuesday"){
-        name = "Abenaa"
+        akan = "Abenaa"
       }
       else if(day === "Wednesday"){
-        name = "Akuna"
+        akan = "Akuna"
       }
       else if(day === "Thursday"){
-        name = "Yaa"
+        akan = "Yaa"
       }
       else if(day === "Friday"){
-        name = "Afua"
+        akan = "Afua"
       }
       else if(day === "Saturday"){
-        name = "Ama"
+        akan = "Ama"
       }
     }
 
     //for Male gender
-    if (gender === "Male"){
+    if (male == true){
 
       if(day === "Sunday"){
-        name = "Kwasi"
+        akan = "Kwasi"
       }
       else if(day === "Monday"){
-        name = "Kwadwo"
+        akan = "Kwadwo"
       }
       else if(day === "Tuesday"){
-        name = "Kwabena"
+        akan = "Kwabena"
       }
       else if(day === "Wednesday"){
-        name = "Kwaku"
+        akan = "Kwaku"
       }
       else if(day === "Thursday"){
-        name = "Yaw"
+        akan = "Yaw"
       }
       else if(day === "Friday"){
-        name = "Kofi"
+        akan = "Kofi"
       }
       else if(day === "Saturday"){
-        name = "Kwame"
+        akan = "Kwame"
       }
     }
 
@@ -104,8 +105,16 @@ console.log(curday('-'));
 
     // end of condition
 
-    if(male.checked && year > 0 && month > 0 && day < 32){
+    if(male == true && year > 0 && month > 0){
       Display.style.color = "black"
-      Display.innerHTML = "Your Akan name is" + name + "and you were born on" + day;
+      Display.innerHTML = "Your Akan name is" + akan + "and you were born on" + day;
+    };
+    if(female == true && year > 0 && month > 0){
+      Display.style.color = "black"
+      Display.innerHTML = "Hey there" + akan + "you were born on" + day;
     }
+    console.log("akan");
+
+  };
+  
   
