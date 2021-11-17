@@ -42,7 +42,7 @@
 
 <h2>Contributing</h2>
 <p>n a case you have any issue with this project you can always pull a request at the pull request centre. In the near future we will be adding new content so keep in touch with us. This project is open to contributions. If one has any contributions you should state so in the pull request centre and we will reach to you.</p>
-<p>We would like to acknowledge Moringaschool and also @JoshuaBarawa they contributed a lot in the complition of this project.</p>
+<p>We would like to acknowledge MoringaSchool, Google, Stackoverflow and also @JoshuaBarawa they contributed a lot in the complition of this project.</p>
 
 <h1>License</h1>
 <p>MIT License</p>
