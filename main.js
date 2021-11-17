@@ -28,24 +28,25 @@ console.log(curday('-'));
         year.appendChild(option);
     }
   };
-      var yearbirth = document.getElementById("year");
-      var monthbirth = document.getElementById("month");
-      var daybirth = document.getElementById("dob");
-      var gender = document.getElementById("gender");
 
-
-    //   adding to DOM property
-    document.getElementById("but").onclick = function(){
+    // variables
+      var year = document.getElementById("year");
+      var month = document.getElementById("month");
+      var day = document.getElementById("dob");
+      var male = document.getElementById("male");
+      var female = document.getElementById("female");
 
     // attaching a function to the event listener
     var week = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-    var day = week[new Date(year.val()+'/'+month.val()+'/'+dob.val()).getDay()];
-    // var name;
+    var day = new Date(year + "/" + month + "/" + day);
+    var find = day.getDay();
+    var response = document.getElementById("response")
+    var name;
 
     // the condition statements
 
     // for Female gender
-    if (gender.checked() == "Female"){
+    if (gender === "Female"){
 
       if(day === "Sunday"){
         name = "Akosua"
@@ -71,7 +72,7 @@ console.log(curday('-'));
     }
 
     //for Male gender
-    if (gender.checked() === "Male"){
+    if (gender === "Male"){
 
       if(day === "Sunday"){
         name = "Kwasi"
@@ -96,9 +97,15 @@ console.log(curday('-'));
       }
     }
 
+    // validating
+    if (month === "" && year === "" && day === ""){
+      alert("invalid data");
+    }
+
     // end of condition
 
-    else{
-      Display.innerHTML = "Your akan name is" + name + "and you were born on" + day
+    if(male.checked && year > 0 && month > 0 && day < 32){
+      Display.style.color = "black"
+      Display.innerHTML = "Your Akan name is" + name + "and you were born on" + day;
     }
-    }
+  
